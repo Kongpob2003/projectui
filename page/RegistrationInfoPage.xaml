@@ -1,0 +1,59 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mauiv2.page.RegistrationInfoPage"
+             Title="ข้อมูลการลงทะเบียนเรียน"
+             BackgroundColor="White"
+>
+
+    <AbsoluteLayout>
+        <Image Source="main.jpg"
+               Aspect="AspectFill"
+               AbsoluteLayout.LayoutFlags="All"
+               AbsoluteLayout.LayoutBounds="0,0,1,1"/>
+
+        <Label Text="2568"
+               FontSize="24"
+               HorizontalOptions="Start"
+               VerticalOptions="Start"
+               TextColor="Black"
+               Padding="20,40,0,0"/>
+
+        
+
+        <StackLayout Orientation="Horizontal"
+                     Padding="20,120,0,0"
+                     Spacing="20">
+            <Button Text="1" Clicked="HandleTermButtonClicked" CommandParameter="1"/>
+            <Button Text="2" Clicked="HandleTermButtonClicked" CommandParameter="2"/>
+            <Button Text="3" Clicked="HandleTermButtonClicked" CommandParameter="3"/>
+        </StackLayout>
+
+        <Grid Margin="150"
+              Padding="40"
+              AbsoluteLayout.LayoutFlags="All"
+              AbsoluteLayout.LayoutBounds="0,0,1,1">
+            <CollectionView x:Name="CourseCollectionView"
+                            ItemsSource="{Binding FilteredCourses}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame Padding="10"
+                               Margin="30"
+                               CornerRadius="10"
+                               BackgroundColor="White">
+                            <StackLayout Orientation="Horizontal"
+                                         Spacing="20">
+                                <Label Text="{Binding CourseName}"
+                                       VerticalOptions="Center"/>
+                                <Label Text="{Binding Grade}"
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="EndAndExpand"/>
+                                
+                            </StackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+    </AbsoluteLayout>
+
+</ContentPage>
