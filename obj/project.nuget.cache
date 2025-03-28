@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pQxhTIaBvC8=",
+  "dgSpecHash": "Tq6UC4cWMNc=",
   "success": true,
-  "projectFilePath": "D:\\cross\\Mauiv2\\Mauiv2.csproj",
+  "projectFilePath": "D:\\cross\\projectfinal2568\\projectui\\Mauiv2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Advic\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.0\\microsoft.extensions.configuration.9.0.0.nupkg.sha512",
     "C:\\Users\\Advic\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.0\\microsoft.extensions.configuration.abstractions.9.0.0.nupkg.sha512",

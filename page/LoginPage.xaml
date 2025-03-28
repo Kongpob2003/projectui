@@ -2,14 +2,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyApp.LoginPage">
-
     <Grid>
-        <!-- รูปพื้นหลัง -->
         <Image Source="bg.jpg"
                Aspect="AspectFill"
                Opacity="0.7" />
-
-        <!-- ข้อความที่มุมซ้ายบน -->
         <Label Text="ระบบการศึกษา"
                FontSize="20"
                FontAttributes="Bold"
@@ -17,9 +13,7 @@
                Margin="20"
                HorizontalOptions="Start"
                VerticalOptions="Start" />
-
         <ScrollView>
-            <!-- กรอบสีขาวครอบตั้งแต่ Label ถึง Button -->
             <Frame BackgroundColor="White"
                    CornerRadius="10"
                    Padding="10"
@@ -28,16 +22,12 @@
                    Margin="20"
                    HasShadow="True">
                 <StackLayout VerticalOptions="Center">
-
-                    <!-- หัวข้อระบบการศึกษา -->
                     <Label Text="เข้าสู่ระบบ"
                            FontSize="30"
                            FontAttributes="Bold"
                            HorizontalOptions="Center"
                            TextColor="Black"
                            Margin="0,40,0,20" />
-
-                    <!-- ช่องกรอกอีเมล -->
                     <Frame BackgroundColor="#F5F5F5"
                            CornerRadius="10"
                            Padding="0"
@@ -45,23 +35,22 @@
                            WidthRequest="400"
                            Margin="0,0,0,20"
                            BorderColor="White">
-                        <Entry Placeholder="อีเมล"
+                        <Entry x:Name="EmailEntry"
+                               Placeholder="อีเมล"
                                Keyboard="Email"
                                Margin="10,0" />
                     </Frame>
-
-                    <!-- ช่องกรอกรหัสผ่าน -->
                     <Frame BackgroundColor="#F5F5F5"
                            CornerRadius="10"
                            Padding="0"
                            HeightRequest="50"
                            WidthRequest="400"
                            BorderColor="White">
-                        <Entry Placeholder="รหัสผ่าน"
+                        <Entry x:Name="PasswordEntry"
+                               Placeholder="รหัสผ่าน"
                                IsPassword="True"
                                Margin="10,0" />
                     </Frame>
-
                     <Button Text="เข้าสู่ระบบ"
                             BackgroundColor="#007AFF"
                             TextColor="White"

@@ -1,0 +1,14 @@
+[
+  {
+      "email": "1",
+      "password": "1"
+  },
+  {
+      "email": "teacher_john@education.com",
+      "password": "Teach2025"
+  },
+  {
+      "email": "admin@education.com",
+      "password": "Admin!Secure"
+  }
+]

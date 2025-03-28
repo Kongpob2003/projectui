@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\cross\\Mauiv2\\Mauiv2.csproj": {}
+    "D:\\cross\\projectfinal2568\\projectui\\Mauiv2.csproj": {}
   },
   "projects": {
-    "D:\\cross\\Mauiv2\\Mauiv2.csproj": {
+    "D:\\cross\\projectfinal2568\\projectui\\Mauiv2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\cross\\Mauiv2\\Mauiv2.csproj",
+        "projectUniqueName": "D:\\cross\\projectfinal2568\\projectui\\Mauiv2.csproj",
         "projectName": "Mauiv2",
-        "projectPath": "D:\\cross\\Mauiv2\\Mauiv2.csproj",
+        "projectPath": "D:\\cross\\projectfinal2568\\projectui\\Mauiv2.csproj",
         "packagesPath": "C:\\Users\\Advic\\.nuget\\packages\\",
-        "outputPath": "D:\\cross\\Mauiv2\\obj\\",
+        "outputPath": "D:\\cross\\projectfinal2568\\projectui\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
