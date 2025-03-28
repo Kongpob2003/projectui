@@ -1,27 +1,20 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Mauiv2.page.ProfilePage"
              Title="โปรไฟล์"
-             BackgroundColor="White">
-
+             BackgroundColor="#F5F7FA">
     <Grid>
-        <!-- กำหนด Background เป็นรูปภาพ -->
-        <Image Source="main.jpg" Aspect="AspectFill" IsVisible="True" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
-
+        <Image Source="main.jpg" Aspect="AspectFill" Opacity="0.8" />
         <VerticalStackLayout Padding="20" Spacing="20" VerticalOptions="CenterAndExpand">
-            <!-- กล่องสีขาวที่แสดงรูปโปรไฟล์ -->
-            <Frame BackgroundColor="White" CornerRadius="30" HasShadow="True" Padding="40" HorizontalOptions="Center" WidthRequest="300" HeightRequest="350">
-                <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-                    <!-- รูปโปรไฟล์ในวงกลม -->
-                    <Frame WidthRequest="150" HeightRequest="150" CornerRadius="75" IsClippedToBounds="True" Padding="0" BorderColor="Gray">
+            <Frame BackgroundColor="White" CornerRadius="20" Padding="30" HasShadow="True" WidthRequest="350">
+                <VerticalStackLayout Spacing="15" HorizontalOptions="Center">
+                    <Frame WidthRequest="150" HeightRequest="150" CornerRadius="75" Padding="0" BorderColor="#CCCCCC" HasShadow="True">
                         <Image Source="profile_placeholder.png" Aspect="AspectFill" />
                     </Frame>
-                    <!-- แสดงอีเมล -->
-                    <Label Text="user@example.com" FontSize="18" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,10,0,0" />
-                </StackLayout>
+                    <Label Text="user@example.com" FontSize="20" FontAttributes="Bold" TextColor="#333333" HorizontalOptions="Center" />
+                    <Button Text="ออกจากระบบ" BackgroundColor="#FF4444" TextColor="White" CornerRadius="10" WidthRequest="200" HeightRequest="50" />
+                </VerticalStackLayout>
             </Frame>
         </VerticalStackLayout>
     </Grid>
-
 </ContentPage>

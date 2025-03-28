@@ -1,3 +1,5 @@
+using Mauiv2.page.Mauiv2;
+
 namespace Mauiv2.page
 {
     public partial class HomePage : ContentPage
@@ -5,26 +7,48 @@ namespace Mauiv2.page
         public HomePage()
         {
             InitializeComponent();
+            LoadUserData(); // เรียกฟังก์ชันเพื่อโหลดข้อมูลผู้ใช้
         }
 
-        // ฟังก์ชันที่เรียกเมื่อผู้ใช้กดปุ่มลงทะเบียน
+        private void LoadUserData()
+        {
+            // แสดงชื่อผู้ใช้
+            usernameLabel.Text = UserSession.Username; 
+
+            // ตั้งค่ารูปภาพโปรไฟล์
+            if (!string.IsNullOrEmpty(UserSession.ProfileImage))
+            {
+                profileImage.Source = UserSession.ProfileImage; 
+            }
+        }
+
         private async void OnRegisterClicked(object sender, EventArgs e)
         {
-            // ตัวอย่าง: ไปยังหน้าลงทะเบียน (RegisterPage)
-            await Navigation.PushAsync(new RegisterPage());
+            await Navigation.PushAsync(page: new RegisterPage());
         }
 
-        // ฟังก์ชันที่เรียกเมื่อผู้ใช้กดปุ่มดูข้อมูลการลงทะเบียนเรียน
+        private async void OnDeleteClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(page: new DeletePage());
+        }
+
         private async void OnViewRegistrationInfoClicked(object sender, EventArgs e)
         {
-            // ตัวอย่าง: ไปยังหน้าดูข้อมูลการลงทะเบียนเรียน (RegistrationInfoPage)
             await Navigation.PushAsync(new RegistrationInfoPage());
         }
 
         private async void OnProfileImageTapped(object sender, EventArgs e)
         {
-            // นำทางไปยังหน้า ProfilePage
             await Navigation.PushAsync(new ProfilePage());
         }
     }
+    namespace Mauiv2
+{
+    public static class UserSession
+    {
+        public static string Username { get; set; }
+        public static string ProfileImage { get; set; } // เก็บชื่อไฟล์หรือ URL ของรูปโปรไฟล์
+    }
+}
+
 }

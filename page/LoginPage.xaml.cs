@@ -18,7 +18,7 @@ namespace MyApp
             string enteredPassword = PasswordEntry.Text;
 
             // ตรวจสอบข้อมูลอีเมลและรหัสผ่านจาก MockUsers
-            var user = Mauiv2.page.Viewlogin.MockUsers.FirstOrDefault(u => u.Username == enteredEmail && u.Password == enteredPassword);
+            var user = Mauiv2.page.Viewlogin.MockUsers.FirstOrDefault(u => u.Email == enteredEmail && u.Password == enteredPassword);
 
             if (user != null)
             {

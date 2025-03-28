@@ -1,53 +1,46 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Mauiv2.page.HomePage"
              Title="หน้าหลัก"
              BackgroundColor="White">
-
     <Grid>
-        <!-- กำหนด Background เป็นรูปภาพ -->
-        <Image Source="main.jpg" Aspect="AspectFill" IsVisible="True" Grid.RowSpan="2" />
-
+        <Image Source="main.jpg" Aspect="AspectFill" Opacity="0.9" Grid.RowSpan="2" />
+        
         <Grid.RowDefinitions>
-            <RowDefinition Height="70" /> <!-- Navbar ความสูง 70 -->
+            <RowDefinition Height="70" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <!-- Navbar ด้านบน -->
-        <Grid BackgroundColor="Black" Grid.Row="0" Padding="10">
+        <!-- Navbar -->
+        <Grid BackgroundColor="#333333" Grid.Row="0" Padding="15">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
-
-            <Label Text="Home" FontSize="20" FontAttributes="Bold" TextColor="White" VerticalOptions="Center" />
-            
-            <StackLayout Grid.Column="1" Orientation="Horizontal" HorizontalOptions="End" VerticalOptions="Center">
-                <Frame WidthRequest="40" HeightRequest="40" CornerRadius="20" IsClippedToBounds="True" Padding="0">
-                    <Frame.GestureRecognizers>
-        <TapGestureRecognizer Tapped="OnProfileImageTapped" />
-    </Frame.GestureRecognizers>
-                    <Image Source="profile_placeholder.png" Aspect="AspectFill" />
+            <Label Text="Home" FontSize="22" FontAttributes="Bold" TextColor="White" VerticalOptions="Center" />
+            <StackLayout Grid.Column="1" Orientation="Horizontal" Spacing="10" VerticalOptions="Center">
+                <Frame WidthRequest="40" HeightRequest="40" CornerRadius="20" Padding="0" HasShadow="True">
+                    <Frame.GestureRecognizers >
+                        <TapGestureRecognizer Tapped="OnProfileImageTapped" />
+                    </Frame.GestureRecognizers>
+                    <Image x:Name="profileImage" Aspect="AspectFill" />
                 </Frame>
-                <Label Text="Username" TextColor="White" VerticalOptions="Center" Margin="10,0,0,0" FontAttributes="Bold" />
+                <Label x:Name="usernameLabel" TextColor="White" FontSize="16" FontAttributes="Bold" VerticalOptions="Center" />
             </StackLayout>
         </Grid>
 
-        <!-- เนื้อหาตรงกลาง -->
-        <VerticalStackLayout Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" Spacing="20">
-            <Label Text="Welcome to .NET MAUI!" FontSize="24" VerticalOptions="Center" HorizontalOptions="Center" />
-
-            <Frame CornerRadius="30" BackgroundColor="#4CAF50" Padding="0" HasShadow="True">
-    <Button Text="ลงทะเบียนเรียน" FontSize="18" WidthRequest="250" HeightRequest="60" TextColor="White" Clicked="OnRegisterClicked"/>
-</Frame>
-
-<Frame CornerRadius="30" BackgroundColor="#2196F3" Padding="0" HasShadow="True">
-    <Button Text="ดูข้อมูลการลงทะเบียนเรียน" FontSize="18" WidthRequest="250" HeightRequest="60" TextColor="White" Clicked="OnViewRegistrationInfoClicked"/>
-</Frame>
-
+        <!-- Main Content -->
+        <VerticalStackLayout Grid.Row="1" Spacing="25" VerticalOptions="Center" HorizontalOptions="Center">
+            <Label Text="Welcome to Kiw.Net" FontSize="28" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center" />
+            <Frame CornerRadius="15" BackgroundColor="#4CAF50" Padding="0" HasShadow="True">
+                <Button Text="ลงทะเบียนเรียน" FontSize="18" WidthRequest="250" HeightRequest="60" TextColor="White" Clicked="OnRegisterClicked" />
+            </Frame>
+            <Frame CornerRadius="15" BackgroundColor="#FF4444" Padding="0" HasShadow="True">
+                <Button Text="ถอนรายวิชา" FontSize="18" WidthRequest="250" HeightRequest="60" TextColor="White" Clicked="OnDeleteClicked" />
+            </Frame>
+            <Frame CornerRadius="15" BackgroundColor="#2196F3" Padding="0" HasShadow="True">
+                <Button Text="ดูข้อมูลการลงทะเบียนเรียน" FontSize="18" WidthRequest="250" HeightRequest="60" TextColor="White" Clicked="OnViewRegistrationInfoClicked" />
+            </Frame>
         </VerticalStackLayout>
-
     </Grid>
-
 </ContentPage>

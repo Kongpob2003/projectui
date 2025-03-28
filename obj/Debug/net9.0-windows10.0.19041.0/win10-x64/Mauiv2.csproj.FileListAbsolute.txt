@@ -950,3 +950,11 @@ D:\cross\projectfinal2568\projectui\obj\Debug\net9.0-windows10.0.19041.0\win10-x
 D:\cross\projectfinal2568\projectui\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 D:\cross\projectfinal2568\projectui\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 D:\cross\projectfinal2568\projectui\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\mock_users.json
+D:\cross\projectfinal2568\projectui\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\d.scale-100.jpg
+D:\cross\projectfinal2568\projectui\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\b.scale-100.png
+D:\cross\projectfinal2568\projectui\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\c.scale-100.png
+D:\cross\projectfinal2568\projectui\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\a.scale-100.png
+D:\cross\projectfinal2568\projectui\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\d.scale-100.jpg
+D:\cross\projectfinal2568\projectui\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\b.scale-100.png
+D:\cross\projectfinal2568\projectui\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\c.scale-100.png
+D:\cross\projectfinal2568\projectui\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\a.scale-100.png
