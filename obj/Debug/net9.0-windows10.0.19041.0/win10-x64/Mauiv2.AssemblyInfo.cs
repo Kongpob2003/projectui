@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mauiv2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+4a4fea4bfa5c870abd186048d938409d2b847bc9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+fa19e36729295a8a99db7ff9d0e9e33325c331e6")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mauiv2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mauiv2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
